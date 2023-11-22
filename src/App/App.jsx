@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { AddProductForm } from './components/AddProductForm';
 import { Cart } from './components/Cart';
@@ -25,9 +25,20 @@ function App() {
 		},
 	]);
 
+	useEffect(() => {
+		let cart_b = localStorage.getItem('Cart');
+		if (cart_b) {
+			setCart(JSON.parse(cart_b));
+		}
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem('Cart', JSON.stringify(cart));
+	}, [cart]);
+
 	return (
 		<main className='bg-blue-950 h-screen container flex flex-row'>
-			<AddProductForm cart={cart} setCart={setCart} />
+			<AddProductForm cart={cart} setCart={cart} />
 			<Cart cart={cart} setCart={setCart} />
 		</main>
 	);
