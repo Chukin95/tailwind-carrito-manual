@@ -42,7 +42,7 @@ function App() {
 			quantity: 2,
 		},
 		{
-			name: 'Bolsa de Carbón',
+			name: 'Carbón',
 			description: 'Bolsas de carbón por kg',
 			price: 900,
 			quantity: 2,
