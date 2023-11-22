@@ -23,7 +23,7 @@ export const Cart = ({ cart, setCart }) => {
 
 	return (
 		<>
-			<div className='gap-5 sm:w-4/12 md:w-8/12 lg:w-10/12 xl:w-9/12 2xl:w-10/12 pb-10 mt-5 mb-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
+			<div className='gap-5 sm:w-4/12 md:w-8/12 lg:w-10/12 xl:w-9/12 pb-10 mt-5 mb-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 				{cart.map((item, index) => (
 					<div
 						key={index}
