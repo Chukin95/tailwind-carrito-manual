@@ -6,21 +6,45 @@ import { Cart } from './components/Cart';
 function App() {
 	const [cart, setCart] = useState([
 		{
-			name: 'banana',
+			name: 'Banana',
 			description: 'Bananas por kg',
 			price: 545,
 			quantity: 3,
 		},
 		{
-			name: 'naranja',
+			name: 'Naranja',
 			description: 'Naranjas por docena',
 			price: 388,
 			quantity: 1,
 		},
 		{
-			name: 'tomate',
+			name: 'Tomate',
 			description: 'Tomates por kg',
 			price: 650,
+			quantity: 2,
+		},
+		{
+			name: 'Limon',
+			description: 'Limones por docena',
+			price: 300,
+			quantity: 2,
+		},
+		{
+			name: 'Manzana',
+			description: 'Manzanas por kg',
+			price: 500,
+			quantity: 2,
+		},
+		{
+			name: 'Morrón',
+			description: 'Morrones por kg',
+			price: 800,
+			quantity: 2,
+		},
+		{
+			name: 'Bolsa de Carbón',
+			description: 'Bolsas de carbón por kg',
+			price: 900,
 			quantity: 2,
 		},
 	]);
@@ -38,7 +62,7 @@ function App() {
 
 	return (
 		<main className='bg-blue-950 h-screen container flex flex-row'>
-			<AddProductForm cart={cart} setCart={cart} />
+			<AddProductForm cart={cart} setCart={setCart} />
 			<Cart cart={cart} setCart={setCart} />
 		</main>
 	);
