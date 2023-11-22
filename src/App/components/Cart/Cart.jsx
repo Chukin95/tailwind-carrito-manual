@@ -32,9 +32,9 @@ export const Cart = ({ cart, setCart }) => {
 						<div className='flex flex-col flex-wrap justify-center text-start h-5/6'>
 							<h3 className='text-2xl text-center'>{item.name.slice(0, 10)}</h3>
 							<p className='pl-3'>{item.description.slice(0, 40)}</p>
-							<p className='pl-3 pb-3'>Quantity: {item.quantity}</p>
-							<p className='pl-3'>Price p/u: ${item.price}</p>
-							<p className='pl-3'>Price Subtotal: ${item.price * item.quantity}</p>
+							<p className='pl-3 pb-3'>Cantidad: {item.quantity}</p>
+							<p className='pl-3'>Precio p/u: ${item.price}</p>
+							<p className='pl-3'>Subtotal: ${item.price * item.quantity}</p>
 						</div>
 						<div className='pb-3 mx-auto h-2/6 text-white bg-gray-400 shadow-lg rounded-lg overflow-hidden'>
 							<button
@@ -50,7 +50,7 @@ export const Cart = ({ cart, setCart }) => {
 							<button
 								onClick={() => handleDeleteItem(index)}
 								className='mr-2 px-3 rounded-xl bg-slate-950'>
-								Delete
+								Eliminar
 							</button>
 						</div>
 					</div>
