@@ -40,8 +40,9 @@ export const AddProductForm = ({ cart, setCart }) => {
 	return (
 		<form
 			onSubmit={e => handleSubmit(e)}
-			className='flex flex-col justify-center w-1/3 h-96 p-10'>
+			className='flex flex-col justify-center sm:w-8/12 md:w-4/12 lg:w-4/12 xl:w-3/12 h-96 p-10'>
 			<h1 className='text-white text-3xl py-10'>Cargar producto</h1>
+			<br/>
 			<input
 				type='text'
 				id='newProductName'
@@ -53,6 +54,7 @@ export const AddProductForm = ({ cart, setCart }) => {
 			<label htmlFor='newProductName' className='text-white'>
 				Nombre del producto
 			</label>
+			<br/>
 			<input
 				type='text'
 				id='newProductDescription'
@@ -64,6 +66,7 @@ export const AddProductForm = ({ cart, setCart }) => {
 			<label htmlFor='newProductDescription' className='text-white'>
 				Descripción (Opcional)
 			</label>
+			<br/>
 			<input
 				type='number'
 				id='newProductPrice'
@@ -75,6 +78,7 @@ export const AddProductForm = ({ cart, setCart }) => {
 			<label htmlFor='newProductPrice' className='text-white'>
 				Precio
 			</label>
+			<br/>
 			<button className='w-auto text-white text-center rounded-xl bg-slate-950'>
 				Add to Cart
 			</button>
